@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Home page</title>
+      <meta name="description" content="The home page for personal blog">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- TODO: Google Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+       <!-- TODO: main style  -->
+      <link rel="stylesheet" href="css_pages/main.css">
+      <!-- TODO: font-awesome icons  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <!-- TODO: start container to organize the page contents -->
+      <div class = "container">
+         <!-- TODO: start header section, where it contains the logo and nav bar -->
+         <header class = "header">
+            <div>
+               <h1 class="logo_name">Nejood</h1>
+               <p class="logo_phrase">Life Style Blog</p>
+            </div>
+            <nav class="nav_bar">
+               <ul class="nav_list">
+                  <li class="nav_list_item"><a class="nav_list_link active" href="#">Home</a></li>
+                  <li class="nav_list_item"><a class="nav_list_link" href="#">Blog</a></li>
+                  <li class="nav_list_item"><a class="nav_list_link" href="#">Gallery</a></li>
+               </ul>
+            </nav>
+         </header>
+         <!-- TODO: start bannner section, it contains just image -->
+         <picture class="banner"> </picture>
+         <!-- TODO: start content section, it contains three sections:
+            1. image and phrase
+            2. image and welcome paragraph
+            3. image and about blog paragraph
+          -->
+         <main role="main" class="content">
+            <section class="section_content">
+               <!-- TODO: start content section, section 1 (image and phrase) -->
+               <div class="div_quot_paragraph">
+                  <q class="quot_paragraph">You only live once, but if you do it right, once is enough.</q>
+                  <em class="quot_paragraph">— Mae West</em> 
+               </div>
+               <img class="main_image quot_image" src="assets/images/img1.jpg" alt="Quotation Image">
+            </section>
+            <section class="section_content section_content_right">
+               <!-- TODO: start content section, section 2 (image and welcome paragraph) -->
+               <div class="div_welcome_paragraph">
+                  <h2 class="main_paragraph paragraph_title">Welcome</h2>
+                  <p class="main_paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis commodo ligula eget dis parturient consectetuer adipiscing lit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div>
+               <img class="main_image welcome_image" src="assets/images/img2.jpg" alt="Welcome Image">
+            </section>
+            <section class="section_content">
+               <!-- TODO: start content section, section 3 (image and about blog paragraph) -->
+               <div class="div_about_paragraph">
+                  <h3 class="main_paragraph paragraph_title">About the Blog</h3>
+                  <p class="main_paragraph">sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+               </div>
+               <img class="main_image about_image" src="assets/images/img3.jpg" alt="About Blog image">
+            </section>
+         </main>
+         <!-- TODO: start cards section, it contains 3 cards and each card has a button that links with the post page -->
+         <section class="cards_container">
+            <hr class="divider">
+            <h3 class="card_title">Don't Miss</h3>
+            <ul class="all_cards">
+               <li class="card_box">
+                  <div class="card_div">
+                     <div class="div_img_card">
+                        <img class="img_card" src="assets/images/post_1.jpg" alt="post 1">
+                     </div>
+                     <div class="card_text">
+                        <h5 class="card_name"><b>Post 1</b></h5>
+                        <p class="card_paragraph">Lorem Ipsum has been the industry's standard dummy</p>
+                        <a class="btn" href="html_pages/post_1.html">READ MORE</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="card_box">
+                  <div class="card_div">
+                     <div class="div_img_card">
+                        <img class="img_card" src="assets/images/post_2.jpg" alt="post 2">
+                     </div>
+                     <div class="card_text">
+                        <h5 class="card_name"><b>Post 2</b></h5>
+                        <p class="card_paragraph">Lorem Ipsum has been the industry's standard dummy</p>
+                        <a class="btn" href="html_pages/post_2.html">READ MORE</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="card_box">
+                  <div class="card_div">
+                     <div class="div_img_card">
+                        <img class="img_card" src="assets/images/post_3.jpg" alt="post 3">
+                     </div>
+                     <div class="card_text">
+                        <h5 class="card_name"><b>Post 3</b></h5>
+                        <p class="card_paragraph">Lorem Ipsum has been the industry's standard dummy</p>
+                        <a class="btn" href="html_pages/post_3.html">READ MORE</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </section>
+         <!-- TODO: start sidebar section, it contains five sections:
+            1. About me (Author Info)
+            2. image and caption
+            3. Social Media links
+            4. Subscribe form
+            5. Categories
+         -->
+         <aside class="sidebar">
+            <div class="about_me">
+               <h2 class="about_me_text">| About me</h2>
+               <img class="about_me_img" src="assets/images/avatar.jpg" alt="avatar">
+               <p class="about_me_text"> I am Nejood Abdulaziz, I graduated from King Abdulaziz University, and now I work as a front end developer. My greatest passion in life is using my technical know-how to benefit other people. Also, I love Traveling, Cooking, Music and Fashion.</p>
+            </div>
+            <div class="about_me location">
+               <figure>
+                  <img  class="location_img" src="assets/images/map.png" alt="Saudi Arabia">
+                  <figcaption>I live in Jeddah, Saudi Arabia</figcaption>
+               </figure>
+            </div>
+            <div class="social_media">
+               <h2>| Social Media</h2>
+               <div class="social_media_icons">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="subscribe">
+               <h5 class="subscribe_title">Subscribe to Me!</h5>
+               <form>
+                  <input class="subscribe_email" type="text" value=" Enter your email">
+                  <input class="subscribe_btn" type="submit" value="Subscribe">
+               </form>
+            </div>
+            <div class="categories">
+               <h2 class="categories_title"><u>CATEGORIES</u></h2>
+               <ul class="categories_list">
+                  <li>Food</li>
+                  <li>Fashion</li>
+                  <li>Travel</li>
+                  <li>Yoga</li>
+                  <li>Music</li>
+               </ul>
+            </div>
+         </aside>
+         <!-- TODO: start footer section, it contains two sentences -->
+         <footer class="footer">
+            <p>Nejood Lifestyle Blog</p>
+            <p>All Rights Reserved</p>
+         </footer>
+      </div>
+      <!-- end container -->
+   </body>
+</html>

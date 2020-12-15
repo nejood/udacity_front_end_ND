@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Post 3</title>
+      <meta name="description" content="The home page for personal blog">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- TODO: Google Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- TODO: post style  -->
+      <link rel="stylesheet" href="../css_pages/post.css">
+      <!-- TODO: font-awesome icons  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <!-- TODO: start container to organize the page contents -->
+      <div class = "container">
+         <!-- TODO: start header section, where it contains the logo and nav bar -->
+         <header class = "header">
+            <div>
+               <h1 class="logo_name">Nejood</h1>
+               <p class="logo_phrase">Life Style Blog</p>
+            </div>
+            <nav class="nav_bar">
+               <ul class="nav_list">
+                  <li class="nav_list_item"><a class="nav_list_link" href="../index.html">Home</a></li>
+                  <li class="nav_list_item"><a class="nav_list_link active" href="#">Blog</a></li>
+                  <li class="nav_list_item"><a class="nav_list_link" href="#">Gallery</a></li>
+               </ul>
+            </nav>
+         </header>
+         <!-- TODO: start bannner section, it contains just image -->
+         <picture class="banner"> </picture>
+         <!-- TODO: start content section, it contains three sections:
+            1. post image and caption
+            2. post information (date, comments and likes)
+            3. the article
+          -->
+         <main role="main" class="post">
+            <figure class="post_img_container">
+               <img class="post_img" src="../assets/images/post_3.jpg" alt="post 3">
+               <figcaption class="post_img_caption">post 3 is about music</figcaption>
+            </figure>
+            <div class="post_img_info">
+               <div class="post_img_comments">
+                  <p>Comments | 239 
+                  <p class="post_img_likes"> Likes | 500</p>
+                  </p>
+               </div>
+               <div class="post_img_date">
+                  <p>19 MAY 2019</p>
+               </div>
+            </div>
+            <div class="post_article_div">
+               <h1 class="post_title">Post 3 Title</h1>
+               <article>
+                  Potenti praesent hac facilisis cras cubilia. Amet curabitur netus vitae sagittis eget, purus pharetra imperdiet orci elit iaculis egestas. Massa. Nunc at, vehicula velit diam habitant. Commodo dictumst feugiat iaculis taciti nostra per maecenas euismod lacus fermentum mi tempus commodo. Convallis curabitur cubilia cubilia tempus scelerisque lobortis morbi parturient tincidunt proin odio fames, feugiat sollicitudin bibendum netus.
+                  Ultricies sapien tempor lorem cum. Condimentum Dapibus non nisi amet maecenas proin quam neque parturient mus. Sociosqu imperdiet aliquet tortor eleifend fames suspendisse, vel metus. Rutrum natoque posuere, habitasse risus ullamcorper est volutpat netus adipiscing pulvinar. Nullam lacinia eros nonummy et dis ullamcorper pede neque odio mi lacinia eleifend. Penatibus hac vehicula orci blandit a.
+                  Facilisis primis suscipit leo duis aenean natoque fringilla, augue nam nam placerat bibendum bibendum. Pretium nam. Erat dignissim ante. Eu. Condimentum parturient massa velit purus ut fames, quis. Eros class sodales egestas arcu condimentum aliquam nulla purus nam in, elit nec ad. Semper magnis luctus pulvinar nunc arcu curae; nullam pharetra dapibus porta fusce eu phasellus quam vehicula dolor euismod fermentum nascetur curabitur mus interdum sem euismod, sapien curae; faucibus eleifend curabitur vehicula. Ligula nulla velit leo. Nam magnis. Dis maecenas imperdiet dictum ultricies dis pretium sagittis sodales.
+               </article>
+            </div>
+         </main>
+        <!-- TODO: start sidebar section, it contains five sections:
+          1. About me (Author Info)
+          2. image and caption
+          3. Social Media links
+          4. Subscribe form
+          5. Categories
+         -->
+         <aside class="sidebar">
+            <div class="about_me">
+               <h2 class="about_me_text">| About me</h2>
+               <img class="about_me_img" src="../assets/images/avatar.jpg" alt="avatar">
+               <p class="about_me_text"> I am Nejood Abdulaziz, I graduated from King Abdulaziz University, and now I work as a front end developer. My greatest passion in life is using my technical know-how to benefit other people. Also, I love Traveling, Cooking, Music and Fashion.</p>
+            </div>
+            <div class="about_me location">
+               <figure>
+                  <img  class="location_img" src="../assets/images/map.png" alt="Saudi Arabia">
+                  <figcaption>I live in Jeddah, Saudi Arabia</figcaption>
+               </figure>
+            </div>
+            <div class="social_media">
+               <h2>| Social Media</h2>
+               <div class="social_media_icons">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="subscribe">
+               <h5 class="subscribe_title">Subscribe to Me!</h5>
+               <form>
+                  <input class="subscribe_email" type="text" value=" Enter your email">
+                  <input class="subscribe_btn" type="submit" value="Subscribe">
+               </form>
+            </div>
+            <div class="categories">
+               <h2 class="categories_title"><u>CATEGORIES</u></h2>
+               <ul class="categories_list">
+                  <li>Food</li>
+                  <li>Fashion</li>
+                  <li>Travel</li>
+                  <li>Yoga</li>
+                  <li>Music</li>
+               </ul>
+            </div>
+         </aside>
+         <!-- TODO: start footer section, it contains two sentences -->
+         <footer class="footer">
+            <p>Nejood Lifestyle Blog</p>
+            <p>All Rights Reserved</p>
+         </footer>
+      </div>
+      <!-- end container !-->
+   </body>
+</html>

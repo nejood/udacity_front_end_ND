@@ -1,0 +1,105 @@
+/* TODO: this sheet is for styling the card section */
+/* TODO: styling the divider line */
+.divider {
+  border-top: 3px dashed #EDDCD2;
+  margin: 1.5em 0;
+}
+/* TODO: start styling the cards */
+.cards_container {
+  grid-area: cd;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.card_title {
+  font: 2.8rem 'Playball', cursive;
+  color: #99C1DE;
+  margin-left: 0.5em;
+}
+
+.all_cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin,
+  padding: 0;
+  list-style: none;
+}
+
+.card_box {
+  display: flex;
+  padding: 1em;
+}
+
+@media (min-width: 40em) {
+  .card_box {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56em) {
+  .card_box {
+    width: 33.3%;
+  }
+}
+/* TODO: styling the cards images */
+.img_card {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.card_div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+/* TODO: styling the cards text */
+.card_text {
+  padding: 1em;
+  background-color: #E7EFED;
+}
+
+.card_name {
+  color: #7DB5B3;
+  font-size: 1.09rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.card_paragraph {
+  color: #7DB5B3;
+  font-size: 0.880rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.25em;
+}
+/* TODO: styling the cards buttons */
+.btn {
+  font-weight: 400;
+  font-size: 0.880rem;
+  text-decoration: none;
+  text-align: center;
+  color: #7DB5B3;
+  background-color: #E7EFED;
+  padding: 0.8em;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.25em;
+  border: 1px solid #7DB5B3;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+/* ========================================================== */
+/* TODO: reordered the cards to be centred in mobile and tablet */
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .all_cards {
+    justify-content: center;
+  }
+}

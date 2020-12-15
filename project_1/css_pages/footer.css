@@ -1,0 +1,12 @@
+/* TODO: this sheet is for styling the footer section */
+.footer {
+	grid-area: ft;
+	background-color: #99C1DE;
+}
+
+.footer p {
+	font: 700 1.1rem 'El Messiri', sans-serif;
+	color: #F0EFEB;
+	text-align: center;
+	margin-top: 0.5em;
+}

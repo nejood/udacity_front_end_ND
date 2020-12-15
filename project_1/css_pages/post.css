@@ -1,0 +1,87 @@
+/* TODO: import all needed style sheets */
+@import "header.css";
+@import "banner.css";
+@import "side.css";
+@import "footer.css";
+/* TODO: General style for document */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* TODO: General style for images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+/* TODO: grid for big size screens */
+.container {
+  display: grid;
+  grid-template-columns: 74% 26%;
+  grid-template-rows: 15em 20em auto 5em;
+  grid-template-areas: "hr hr" "br br" "po sd" "ft ft";
+}
+/* TODO: start styling post section */
+.post {
+  grid-area: po;
+  margin: 4.5em 2em;
+}
+
+.post_img_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post_img {
+  width: 80%;
+  align-self: center;
+  border-radius: 0.25em;
+}
+
+.post_img_caption {
+  align-self: center;
+  font-weight: 500;
+}
+
+.post_img_info {
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.post_img_comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_img_likes {
+  margin-left: 2em;
+}
+
+.post_article_div {
+  color: #3C6865;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.post_title {
+  margin: 2em 0;
+}
+
+
+/* ========================================================== */
+/* TODO: resize the grid to be suitable for mobile and tablet */
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15em 20em auto auto 5em;
+    grid-template-areas: "hr" "br" "po" "sd" "ft";
+  }
+}

@@ -1,0 +1,68 @@
+/* TODO: this sheet is for styling the header section */
+.header {
+  grid-area: hr;
+  display: flex;
+  margin: 3em auto;
+  width: 90%;
+  justify-content: space-between;
+}
+/* TODO: start styling the logo */
+.logo_name {
+  font: 4rem 'Playball', cursive;
+  color: #EF6C9C;
+  text-align: left;
+}
+
+.logo_phrase {
+  font: 600 1.5rem 'El Messiri', sans-serif;
+  color: #326F9A;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+/* TODO: start styling the navbar */
+.nav_bar {
+  padding: 3em 0;
+  cursor: pointer;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+}
+
+.nav_list_item {
+  margin: 0 1.3em;
+}
+
+.nav_list_link {
+  font: 600 1.6rem 'El Messiri', sans-serif;
+  color: #99C1DE;
+  text-decoration: none;
+}
+
+.nav_list_link:hover,
+.nav_list_link:focus {
+  color: #7DB5B3;
+}
+
+.active {
+  color: #7DB5B3;
+  text-decoration: underline;
+}
+
+
+/* ========================================================== */
+/* TODO: reordered the header section to be suitable for mobile and tablet */
+
+@media (min-width: 320px) and (max-width: 590px) {
+  .header {
+    margin: auto;
+    flex-direction: column;
+  }
+  .logo_name,
+  .logo_phrase,
+  .nav_list {
+    text-align: center;
+    justify-content: center;
+  }
+}

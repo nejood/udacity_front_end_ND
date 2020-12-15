@@ -1,0 +1,128 @@
+/* TODO: this sheet is for styling the sidrbar */
+.sidebar {
+  grid-area: sd;
+  background-color: #f4f3f0;
+  margin-left: 1.5em;
+}
+/* TODO: start styling about me section */
+.about_me {
+  margin: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #234D6C;
+}
+
+.about_me_img {
+  border-radius: 0.25em;
+  margin: 1em 0;
+  height: 15em;
+}
+/* TODO: start styling location section */
+.location {
+  align-items: center;
+  color: #99C1DE;
+}
+
+.location_img {
+  border-radius: 0.25em;
+  margin: 1em 0;
+  width: 15em;
+  height: 9em;
+}
+/* TODO: start styling social media section */
+.social_media {
+  margin: 4.5em 1em;
+  color: #234D6C;
+}
+
+.social_media_icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+/* TODO: styling social media icons */
+.fa {
+  padding: 1.5em;
+  width: 5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+/* TODO: start styling subscrib section */
+.subscribe {
+  margin: 0 1em;
+}
+
+.subscribe_title {
+  font: 2.4rem 'Playball', cursive;
+  color: #8C8569;
+  margin-bottom: 0.6em;
+}
+
+.subscribe_email {
+  width: 100%;
+  height: 4em;
+  border-radius: 0.25em;
+  border: 2px solid #EF6C9C;
+}
+
+.subscribe_btn {
+  margin-top: 1em;
+  width: 100%;
+  height: 3em;
+  border-radius: 0.25em;
+  border: 2px solid #EF6C9C;
+  background-color: #EF6C9C;
+  color: #FAD2E1;
+  cursor: pointer;
+}
+/* TODO: start styling categories section */
+.categories {
+  margin: 5em 1em;
+  color: #234D6C;
+}
+
+.categories_title {
+  color: #7DB5B3;
+  margin-bottom: 1em;
+}
+
+.categories_list {
+  list-style: none;
+  font-weight: bold;
+}
+
+.categories_list li {
+  margin: 0.6em 0;
+}
+
+
+/* ========================================================== */
+/* TODO: reordered and resize the sidebar to be suitable in mobile and tablet */
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .sidebar {
+    margin-left: 0;
+  }
+  .subscribe_email,
+  .subscribe_btn {
+    width: 80%;
+  }
+  .about_me_img {
+    max-width: 40%;
+    height: auto;
+    align-self: center;
+  }
+}

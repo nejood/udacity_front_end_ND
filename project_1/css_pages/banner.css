@@ -1,0 +1,18 @@
+/* TODO: this sheet is for styling the banner section */
+.banner {
+	grid-area: br;
+	background: url('../assets/images/banner.png') no-repeat fixed center center;
+	background-size: cover;
+}
+
+
+/* ========================================================== */
+/* TODO: resize the banner to be suitable for mobile and tablet */
+
+@media (max-width: 800px) {
+	.banner {
+		background-size: 100% 100%;
+		background-attachment: scroll;
+		background-position: 0% 0%;
+	}
+}

@@ -1,0 +1,41 @@
+/* TODO: import all needed style sheets */
+@import "header.css";
+@import "banner.css";
+@import "content.css";
+@import "cards.css";
+@import "side.css";
+@import "footer.css";
+/* TODO: General style for document */
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+}
+/* TODO: General style for images */
+img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      vertical-align: middle;
+}
+/* TODO: grid for big size screens */
+.container {
+      display: grid;
+      grid-template-columns: 74% 26%;
+      grid-template-rows: 15em 20em auto auto 5em;
+      grid-template-areas: "hr hr" "br br" "cont sd" "cd sd" "ft ft";
+}
+
+
+/* ========================================================== */
+/* TODO: resize the grid to be suitable for mobile and tablet */
+
+@media (min-width: 320px) and (max-width: 960px) {
+      .container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 15em 20em auto auto auto 5em;
+            grid-template-areas: "hr" "br" "cont" "cd" "sd" "ft";
+      }
+}

@@ -1,0 +1,93 @@
+/* TODO: this sheet is for styling the content in the home page */
+/* TODO: start styling the content section */
+.content {
+	grid-area: cont;
+	display: flex;
+	flex-direction: column;
+}
+
+.section_content {
+	display: flex;
+	justify-content: space-between;
+}
+/* TODO: this class used to make the content in the right side */
+.section_content_right {
+	flex-direction: row-reverse;
+	margin: 3em 0;
+}
+/* TODO: start style the epigraph */
+.div_quot_paragraph {
+	margin-top: 6em;
+}
+
+.quot_paragraph {
+	font: 2.7rem 'Playball', cursive;
+	color: #C5DEDD;
+	text-align: left;
+	margin-right: 1em;
+}
+/* TODO: general style for all paragraphs */
+.main_paragraph {
+	font-size: 1.3rem;
+	color: #8C8569;
+	text-align: left;
+	margin-left: 1em;
+}
+/* TODO: general style for all paragraphs titles */
+.paragraph_title {
+	font-size: 2.1rem;
+	margin-bottom: 0.4em;
+}
+/* TODO: general style for all images */
+.main_image {
+	width: 24em;
+	height: 25em;
+	border-radius: 0.25rem;
+	opacity: 0.8;
+}
+/* TODO: styling each image with different border color */
+.quot_image {
+	border: 25px solid #EDDCD2;
+}
+
+.welcome_image {
+	border: 25px solid #BCD4E6;
+}
+
+.about_image {
+	border: 25px solid #FDE2E4;
+}
+
+
+/* ========================================================== */
+/* TODO: reordered and resize the content section to be suitable in mobile and tablet */
+
+@media (min-width: 320px) and (max-width: 960px) {
+	.section_content {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.section_content_right,
+	.div_quot_paragraph,
+	.paragraph_title {
+		margin: 0;
+	}
+	.div_quot_paragraph {
+		margin: 1em 0;
+		text-align: center;
+	}
+	.quot_paragraph,
+	.main_paragraph {
+		text-align: center;
+	}
+	.main_paragraph,
+	.paragraph_title {
+		text-align: justify;
+		text-justify: inter-word;
+		margin: 1em 1em;
+	}
+	.main_image {
+		width: 90%;
+	}
+}
