@@ -1,1 +1,2 @@
-# udacity_front_end_ND
+# Udacity Front-End Web Development 
+This repository contains all the front-end program projects 
