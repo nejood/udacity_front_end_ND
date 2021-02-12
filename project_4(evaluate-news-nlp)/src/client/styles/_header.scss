@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font: 2.5rem 'Arial', sans-serif;
+ 
+  .logo_name {
+    color: #EF6C9C;
+    text-align: left;
+  }
+  
+  /* TODO: start styling the navbar */
+  .nav_bar {
+   font-size:1.5rem  ;
+    cursor: pointer;
+  }
+  
+  .nav_list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav_list_item {
+    margin: 0 1.3em;
+  }
+  
+  .nav_list_link {
+    color: #99C1DE;
+    text-decoration: none;
+  }
+  
+  .nav_list_link:hover,
+  .nav_list_link:focus {
+    color: #7DB5B3;
+  }
+  
+  .active {
+    color: #7DB5B3;
+    text-decoration: underline;
+  }
+}
+
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header class = "header">
+            <div>
+               <h1 class="logo_name">Nejood</h1>
+            </div>
+            <nav class="nav_bar">
+               <ul class="nav_list">
+                  <li class="nav_list_item"><a class="nav_list_link active" href="#">Home</a></li>
+                  <li class="nav_list_item"><a class="nav_list_link" href="#">Page 2</a></li>
+                  <li class="nav_list_item"><a class="nav_list_link" href="#">Page 3</a></li>
+               </ul>
+            </nav>
+         </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="article url">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section>
+                <strong>Form Results:</strong>
+                <div id="polarity"></div>
+                <div id="agreement"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"></div>
+                <div id="irony"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Nejood Abdulaziz</p>
+            <p>All Rights Reserved</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>
