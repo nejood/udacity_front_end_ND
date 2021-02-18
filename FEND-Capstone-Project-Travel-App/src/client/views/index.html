@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel App</title>
+</head>
+
+ <body>
+<div class="container" id = "container">
+    <header class ="header">
+      <h1>Travel App</h1> 
+    </header>
+    <form class="form">
+     <label class="label" for="dest">Where you want to go?</label>
+     <input class="form-style input-box" id="dest" placeholder="enter your destination here" type="text">
+     <br>
+     <label class="label" for="startDate">From</label>
+     <input class="form-style input-box" id="startDate" type="date"> 
+     <label class="label" for="endDate">To</label>
+     <input class="form-style input-box" id="endDate" type="date"> 
+     <br>
+     <button class = "form-style btn-search" id="search" type = "submit">Search</button>  
+    </form>
+
+    <section class="travel-info" id="infoSection">
+     
+    </section>
+
+    <footer class="footer">
+      All right reserved for Nejood Abdulaziz
+    </footer>
+</div>
+
+<script>
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+      });
+  }
+ </script>
+
+</body>
+</html>

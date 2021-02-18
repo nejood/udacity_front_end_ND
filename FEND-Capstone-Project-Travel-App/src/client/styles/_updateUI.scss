@@ -1,0 +1,32 @@
+  /* Update Ui:*/
+  .travel-info{
+    max-width: 60%;
+    background: rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(10px);
+    text-align: left;
+  }
+  .title{
+    text-align: center;
+    color: rgb(253, 171, 123);
+    font-size: 1.3rem;
+   }
+ .aboutTime{
+  text-align: left;
+  margin: 1em;
+  color: white;  
+ }
+ .pixyImg{
+  margin: 1em;
+ }
+ .hr{
+  height:2px;
+  border-width:0;
+  color: rgb(253, 171, 123);
+  background-color: rgb(253, 171, 123);
+ }
+ .details{
+  margin: 1em; 
+ }
+ .detailsTitle{
+  color: rgb(253, 171, 123);
+ }
